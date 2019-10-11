@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.springbootssm.dao.ShopCartDao">
+    <insert id="saveShopCart" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+        insert into keke_shopcar(
+        id,
+        create_time,
+        user_id,
+        is_delete,
+        content_id,
+        num,
+        price,
+        img,
+        title,
+        description,
+        ip,
+        ipAddress,
+        url
+        )values(
+        #{id},
+        #{createTime},
+        #{userId},
+        #{isDelete},
+        #{contentId},
+        #{num},
+        #{price},
+        #{img},
+        #{title},
+        #{description},
+        #{ip},
+        #{ipAddress},
+        #{url}
+        )
+    </insert>
+
+    <select id="findShopCart" resultType="com.itheima.springbootssm.pojo.ShopCart">
+        select
+        id,
+        create_time createTime,
+        user_id userId,
+        is_delete isDelete,
+        content_id contentId,
+        num,
+        price,
+        img,
+        title,
+        description,
+        ip,
+        ipAddress,
+        url
+        from keke_shopcar
+        order by create_time desc
+    </select>
+</mapper>

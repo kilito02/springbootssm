@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.springbootssm.dao.CartDao">
+
+    <!--    查询所有购物车信息-->
+    <select id="findCart" resultType="com.itheima.springbootssm.pojo.Cart">
+        select id,name,price,count,pic from cart
+    </select>
+</mapper>

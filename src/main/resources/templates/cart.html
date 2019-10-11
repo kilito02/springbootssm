@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xml:lang="zh-CN">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>我的购物车-小米商城</title>
+    <meta name="viewport" content="width=1226">
+
+    <link rel="stylesheet" href="css/base.min.css">
+    <link rel="stylesheet" type="text/css" href="css/cart.min.css">
+
+</head>
+
+<body>
+<div class="site-header site-mini-header">
+    <div class="container">
+        <div class="header-logo">
+            <a class="logo ir" href="//www.mi.com/index.html" title="小米官网" data-stat-id="1de2e5c522d7b543"
+               onclick="_msq.push(['trackEvent', '5df97b551662ffe7-1de2e5c522d7b543', '//www.mi.com/index.html', 'pcpid', '']);">小米官网</a>
+        </div>
+        <div class="header-title has-more" id="J_miniHeaderTitle">
+            <h2>我的购物车</h2>
+            <p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+        </div>
+        <div class="topbar-info" id="J_userInfo"><span class="user"><a rel="nofollow" class="user-name"
+                                                                       href="//my.mi.com/portal"
+                                                                       target="_blank"><span
+                class="name">108112069</span><i class="iconfont"></i></a>
+						<ul class="user-menu">
+							<li>
+								<a rel="nofollow" href="//my.mi.com/portal" target="_blank">个人中心</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="//order.mi.com/user/comment" target="_blank">评价晒单</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="//order.mi.com/user/favorite" target="_blank">我的喜欢</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="//account.xiaomi.com/" target="_blank">小米帐号</a>
+							</li>
+							<li>
+								<a rel="nofollow" href="//order.mi.com/site/logout">退出登录</a>
+							</li>
+						</ul>
+					</span><span class="sep">|</span>
+            <a rel="nofollow" class="link link-order" href="//static.mi.com/order/" target="_blank">我的订单</a>
+        </div>
+    </div>
+</div>
+
+<div class="page-main">
+
+    <div class="container">
+
+        <div class="cart-empty hide" id="J_cartEmpty">
+            <h2>您的购物车还是空的！</h2>
+            <p class="login-desc">登录后将显示您之前加入的商品</p>
+            <a href="javascript:void(0);" class="btn btn-primary btn-login" id="J_loginBtn"
+               data-stat-id="6ab7b2b79aa79ef3"
+               onclick="_msq.push(['trackEvent', '5df97b551662ffe7-6ab7b2b79aa79ef3', 'javascript:void0', 'pcpid', '']);">立即登录</a>
+            <a href="//list.mi.com/0" class="btn btn-primary btn-shoping J_goShoping" data-stat-id="f7e2e8ff3af3bfec"
+               onclick="_msq.push(['trackEvent', '5df97b551662ffe7-f7e2e8ff3af3bfec', '//list.mi.com/0', 'pcpid', '']);">马上去购物</a>
+        </div>
+        <div id="J_cartBox" class="">
+            <div class="addonitems-tips J_addonitemsTips">小米发货商品满150元免运费,还需<span>101<span>元<a class="J_getaddItems"
+                                                                                              href="javascript:void(0);">去凑单
+									&gt;</a></span></span>
+            </div>
+            <div class="cart-goods-list">
+                <div class="list-head clearfix">
+                    <div class="col col-check"><i class="iconfont icon-checkbox icon-checkbox-selected"
+                                                  id="J_selectAll">√</i>全选
+                    </div>
+                    <div class="col col-img">&nbsp;</div>
+                    <div class="col col-name">商品名称</div>
+                    <div class="col col-price">单价</div>
+                    <div class="col col-num">数量</div>
+                    <div class="col col-total">小计</div>
+                    <div class="col col-action">操作</div>
+                </div>
+                <div class="list-body" id="J_cartListBody">
+                    <div class="item-box">
+
+
+                        <!--<div class="item-table J_cartGoods" data-info="{ commodity_id:'1181300018', gettype:'buy', itemid:'2181300017_0_buy', num:'1'} ">
+                            <div class="item-row clearfix">
+                                <div class="col col-check"><i class="iconfont icon-checkbox icon-checkbox-selected J_itemCheckbox"
+                                     data-itemid="2181300017_0_buy" data-status="1">√</i></div>
+                                <div class="col col-img">
+                                    <a href="//item.mi.com/1181300018.html" target="_blank"> <img alt="" src="//i1.mifile.cn/a1/pms_1527492271.56333477!80x80.png"
+                                         width="80" height="80"> </a>
+                                </div>
+                                <div class="col col-name">
+                                    <div class="tags"></div>
+                                    <div class="tags"></div>
+                                    <h3 class="name"><a href="//item.mi.com/1181300018.html" target="_blank"> 小米无线鼠标青春版
+                                            白色 </a></h3>
+                                </div>
+                                <div class="col col-price"> 49元
+                                    <p class="pre-info"></p>
+                                </div>
+                                <div class="col col-num">
+                                    <div class="change-goods-num clearfix J_changeGoodsNum">
+                                        <a href="javascript:void(0)" class="J_minus"><i class="iconfont"></i></a>
+                                        <input tyep="text" name="2181300017_0_buy" value="1" data-price="49" data-num="1" data-buylimit="19"
+                                         autocomplete="off" class="goods-num J_goodsNum">
+                                        <a href="javascript:void(0) " class="J_plus " data-store="19"><i class="iconfont "></i></a>
+                                    </div>
+                                </div>
+                                <div class="col col-total "> <span class="price">0</span>元 <p class="pre-info "></p>
+                                </div>
+                                <div class="col col-action "><a id="2181300017_0_buy " data-msg="确定删除吗？ " href="javascript:void(0); " title="删除 "
+                                     class="del J_delGoods "><i class="iconfont "></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-table J_cartGoods" data-info="{ commodity_id:'1181300018', gettype:'buy', itemid:'2181300017_0_buy', num:'1'} ">
+                            <div class="item-row clearfix">
+                                <div class="col col-check"><i class="iconfont icon-checkbox icon-checkbox-selected J_itemCheckbox"
+                                     data-itemid="2181300017_0_buy" data-status="1">√</i></div>
+                                <div class="col col-img">
+                                    <a href="//item.mi.com/1181300018.html" target="_blank"> <img alt="" src="//i1.mifile.cn/a1/pms_1527492271.56333477!80x80.png"
+                                         width="80" height="80"> </a>
+                                </div>
+                                <div class="col col-name">
+                                    <div class="tags"></div>
+                                    <div class="tags"></div>
+                                    <h3 class="name"><a href="//item.mi.com/1181300018.html" target="_blank"> 小米无线鼠标青春版
+                                            白色 </a></h3>
+                                </div>
+                                <div class="col col-price"> 49元
+                                    <p class="pre-info"></p>
+                                </div>
+                                <div class="col col-num">
+                                    <div class="change-goods-num clearfix J_changeGoodsNum">
+                                        <a href="javascript:void(0)" class="J_minus"><i class="iconfont"></i></a>
+                                        <input tyep="text" name="2181300017_0_buy" value="1" data-price="49" data-num="1" data-buylimit="5"
+                                         autocomplete="off" class="goods-num J_goodsNum">
+                                        <a href="javascript:void(0) " class="J_plus" data-store="5"><i class="iconfont "></i></a>
+                                    </div>
+                                </div>
+                                <div class="col col-total "> <span class="price">0</span>元 <p class="pre-info "></p>
+                                </div>
+                                <div class="col col-action "><a id="2181300017_0_buy" data-msg="确定删除吗？ " href="javascript:void(0); " title="删除 "
+                                     class="del J_delGoods "><i class="iconfont "></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-table J_cartGoods" data-info="{ commodity_id:'1181300018', gettype:'buy', itemid:'2181300017_0_buy', num:'1'} ">
+                            <div class="item-row clearfix">
+                                <div class="col col-check"><i class="iconfont icon-checkbox icon-checkbox-selected J_itemCheckbox"
+                                     data-itemid="2181300017_0_buy" data-status="1">√</i></div>
+                                <div class="col col-img">
+                                    <a href="//item.mi.com/1181300018.html" target="_blank"> <img alt="" src="//i1.mifile.cn/a1/pms_1527492271.56333477!80x80.png"
+                                         width="80" height="80"> </a>
+                                </div>
+                                <div class="col col-name">
+                                    <div class="tags"></div>
+                                    <div class="tags"></div>
+                                    <h3 class="name"><a href="//item.mi.com/1181300018.html" target="_blank"> 小米无线鼠标青春版
+                                            白色 </a></h3>
+                                </div>
+                                <div class="col col-price"> 49元
+                                    <p class="pre-info"></p>
+                                </div>
+                                <div class="col col-num">
+                                    <div class="change-goods-num clearfix J_changeGoodsNum">
+                                        <a href="javascript:void(0)" class="J_minus"><i class="iconfont"></i></a>
+                                        <input tyep="text" name="2181300017_0_buy" value="1" data-price="19" data-num="1" data-buylimit="10"
+                                         autocomplete="off" class="goods-num J_goodsNum">
+                                        <a href="javascript:void(0) " class="J_plus " data-store="10"><i class="iconfont "></i></a>
+                                    </div>
+                                </div>
+                                <div class="col col-total "> <span class="price">0</span>元 <p class="pre-info "></p>
+                                </div>
+                                <div class="col col-action "><a id="2181300017_0_buy2" data-msg="确定删除吗？ " href="javascript:void(0); " title="删除 "
+                                     class="del J_delGoods "><i class="iconfont "></i></a>
+                                </div>
+                            </div>
+                        </div>-->
+
+                    </div>
+                </div>
+            </div>
+            <!-- 加价购 -->
+            <div class="raise-buy-box " id="J_raiseBuyBox "></div>
+
+            <div class="cart-bar clearfix " id="J_cartBar ">
+                <div class="section-left ">
+                    <a href="//list.mi.com/0 " class="back-shopping J_goShoping" data-stat-id="b16361b4c5491b6d "
+                       onclick="_msq.push([ 'trackEvent', '5df97b551662ffe7-b16361b4c5491b6d', '#', 'pcpid', '']); ">继续购物</a>
+                    <span class="cart-total ">共 <i id="J_cartTotalNum">0</i> 件商品，已选择 <i
+                            id="J_selTotalNum">0</i> 件</span>
+                    <span class="cart-coudan hide " id="J_coudanTip">
+								，还需 <i id="J_postFreeBalance ">101.00</i> 元即可免邮费 <a href="javascript:void(0); "
+                                                                                    id="J_showCoudan "
+                                                                                    data-stat-id="cfc8337d6cbfdef7 "
+                                                                                    onclick="_msq.push([ 'trackEvent', '5df97b551662ffe7-cfc8337d6cbfdef7', 'javascript:void0', 'pcpid', '']); ">立即凑单</a>
+							</span>
+                </div>
+                <span class="activity-money hide ">
+							活动优惠：减 <i id="J_cartActivityMoney ">0</i> 元
+						</span>
+                <span class="total-price ">
+							合计：<em id="J_cartTotalPrice">0</em>元
+						</span>
+                <a href="javascript:void(0); " class="btn btn-a btn btn-primary " id="J_goCheckout "
+                   data-stat-id="9bd56b7232f4ef1a "
+                   onclick="_msq.push([ 'trackEvent', '5df97b551662ffe7-9bd56b7232f4ef1a', 'javascript:void0', 'pcpid', '']); ">去结算</a>
+
+                <div class="no-select-tip hide " id="J_noSelectTip ">
+                    请勾选需要结算的商品
+                    <i class="arrow arrow-a "></i>
+                    <i class="arrow arrow-b "></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-recommend hide " id="J_historyRecommend "></div>
+
+    </div>
+</div>
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+    $(() => {
+        ZqShopCart.loadData();
+    });
+    let ZqShopCart = {
+        //初始化入口
+        init() {
+            //1.初始化购物车数据
+            // ZqShopCart.loadData();
+            //2.控制购物车数量的增加和减少
+            ZqShopCart.addMuinus();
+            //3.控制选中
+            ZqShopCart.selectItem();
+            //4.初始化全选框代码
+            ZqShopCart.selectAllItem();
+            // 5: 给所有的输入框绑定keyup计算小计
+            ZqShopCart.inputLimit();
+        },
+        //控制复选框
+        selectItem() {
+            $("#J_cartListBody .col-check").on("click", function () {
+                $(this).find("i.iconfont").toggleClass("icon-checkbox-selected");
+                //总计
+                ZqShopCart.totalFee();
+                //控制复选框
+                ZqShopCart.selectAllItem();
+            });
+            $("#J_selectAll").on("click", function () {
+                $(this).toggleClass("icon-checkbox-selected");
+                if ($(this).hasClass("icon-checkbox-selected")) {
+                    $("#J_cartListBody .col-check").find("i.iconfont").addClass("icon-checkbox-selected");
+                } else {
+                    $("#J_cartListBody .col-check").find("i.iconfont").removeClass("icon-checkbox-selected");
+                }
+                ZqShopCart.totalFee();
+            })
+        },
+        //控制全选框
+        selectAllItem() {
+            //获取所有选中的元素
+            let len = $("#J_cartListBody .item-box").find(".icon-checkbox-selected").length;
+            //获取所有行数
+            let clen = $("#J_cartListBody .item-box").children().length;
+            if (len == clen) {
+                $("#J_selectAll").addClass("icon-checkbox-selected");
+            } else {
+                $("#J_selectAll").removeClass("icon-checkbox-selected");
+            }
+            // alert(len+":"+clen);
+            $("#J_cartTotalNum").text(clen);
+            $("#J_selTotalNum").text(len);
+        },
+        //小计计算
+        countFee($input) {
+            let num = $input.val();
+            let price = $input.data("price");
+            let countfee = price * num;
+            let $price = $input.parents(".item-row").find(".col-total").find(".price");
+            $price.text(countfee);
+
+            ZqShopCart.totalFee(); //总计
+        },
+        //输入框绑定keyup事件
+        inputLimit() {
+            $("#J_cartListBody").find(".J_goodsNum").on("keyup", function () {
+                let value = $(this).val();
+                if (!(value > 0)) {
+                    value = 1;
+                    $(this).val(1);
+                }
+                let price = $(this).data("price");
+                let store = $(this).data("buylimit");
+                if (value >= store) {
+                    value = store;
+                    $(this).val(store);
+                }
+                let countfee = price * value;
+                let $price = $(this).parents(".item-row").find(".col-total").find(".price");
+                $price.text(countfee);
+
+                ZqShopCart.totalFee(); //总计
+            });
+        },
+        //总计计算
+        totalFee() {
+            let total = 0;
+            $(".item-row").each(function () {
+                $i = $(this).find(".col-check").find("i.iconfont");
+                //如果是选中的就统计
+                if ($i.hasClass("icon-checkbox-selected")) {
+                    total += $(this).find(".col-total").find(".price").text() * 1;
+                }
+            })
+            $("#J_cartTotalPrice ").text(total);
+
+            //获取所有选中的元素
+            let len = $("#J_cartListBody .item-box").find(".icon-checkbox-selected").length;
+            //获取所有行数
+            let clen = $("#J_cartListBody .item-box").children().length;
+            $("#J_cartTotalNum").text(clen);
+            $("#J_selTotalNum").text(len);
+        },
+        //添加减少数量的函数
+        addMuinus() {
+            //添加数量的事件
+            $(".J_plus").on("click", function () {
+                //获取库存
+                let store = $(this).data("store");
+                let $input = $(this).prev();
+                let value = $input.val();
+                value++;
+                if (value > store) value = store;
+                $input.val(value);
+                //小计
+                ZqShopCart.countFee($input);
+            });
+            //减少数量的事件
+            $(".J_minus").on("click", function () {
+                let $input = $(this).next();
+                let value = $input.val();
+                value--;
+                if (value <= 0) value = 1;
+                $input.val(value);
+                //小计
+                ZqShopCart.countFee($input);
+            })
+        },
+        //加载函数的
+        loadData() {
+            $.ajax({
+                type: "get",
+                url: "/findCart",
+                success(res) {
+                    let html = "";
+                    let result = res.list;
+                    for (let i=0;i<result.length;i++) {
+                        // alert(result[i].name);
+                        html += "<div class=\"item-table J_cartGoods\" data-info=\"{ commodity_id:'1181300018', gettype:'buy', itemid:'2181300017_0_buy', num:'1'} \">" +
+                            "    <div class=\"item-row clearfix\">" +
+                            "        <div class=\"col col-check\"><i class=\"iconfont icon-checkbox icon-checkbox-selected J_itemCheckbox\"" +
+                            "             data-itemid=\"2181300017_0_buy\" data-status=\"1\">√</i></div>" +
+                            "        <div class=\"col col-img\">" +
+                            "            <a href=\"//item.mi.com/1181300018.html\" target=\"_blank\"> <img alt=\"\" src=\"//i1.mifile.cn/a1/pms_1527492271.56333477!80x80.png\"" +
+                            "                 width=\"80\" height=\"80\"> </a>" +
+                            "        </div>" +
+                            "        <div class=\"col col-name\">" +
+                            "            <div class=\"tags\"></div>" +
+                            "            <div class=\"tags\"></div>" +
+                            "            <h3 class=\"name\"><a href=\"//item.mi.com/1181300018.html\" target=\"_blank\"> "+result[i].name+"</a></h3>" +
+                            "        </div>" +
+                            "        <div class=\"col col-price\"> "+result[i].price+"<p class=\"pre-info\"></p>" +
+                            "        </div>" +
+                            "        <div class=\"col col-num\">" +
+                            "            <div class=\"change-goods-num clearfix J_changeGoodsNum\">" +
+                            "                <a href=\"javascript:void(0)\" class=\"J_minus\"><i class=\"iconfont\"></i></a>" +
+                            "                <input tyep=\"text\" name=\"2181300017_0_buy\" value=\"1\" data-price=\""+result[i].price+"\" data-num=\"1\" data-buylimit=\""+result[i].count+"\"" +
+                            "                 autocomplete=\"off\" class=\"goods-num J_goodsNum\">" +
+                            "                <a href=\"javascript:void(0) \" class=\"J_plus \" data-store=\""+result[i].count+"\"><i class=\"iconfont \"></i></a>" +
+                            "            </div>" +
+                            "        </div>" +
+                            "        <div class=\"col col-total \"> <span class=\"price\">0</span>元 <p class=\"pre-info \"></p>" +
+                            "        </div>" +
+                            "        <div class=\"col col-action \"><a id=\"2181300017_0_buy2\" data-msg=\"确定删除吗？ \" href=\"javascript:void(0); \" title=\"删除 \"" +
+                            "             class=\"del J_delGoods \"><i class=\"iconfont \"></i></a>" +
+                            "        </div>" +
+                            "    </div>" +
+                            "</div>";
+                    }
+                    $(".item-box").html(html);
+                    ZqShopCart.init();
+                }
+            });
+        }
+    }
+</script>
+</body>
+</html>
